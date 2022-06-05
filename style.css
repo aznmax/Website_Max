@@ -292,6 +292,56 @@ footer p {
     color: #fff;
 }
 
+
+@media screen and (max-width:428px){
+
+    .flex_item_nav ul li{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .introduction_max{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .descriptionHeader .introduction_max{
+        font-size: 15px;
+    }
+
+    header #app{
+        font-size: 30px;
+    }
+
+    header  a .linkedinButton{
+        font-size: 20px;
+       
+    }
+
+
+    .flexPresentation{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .flexPresentation img{
+        width: 40%;
+        margin: auto;
+    }
+
+    .flexPresentation #presentation{
+        display: block;
+        margin: auto;
+    }
+
+
+}
+
+
+
 @media screen and (max-width: 414px){
 
     .flex_item_nav ul li{

@@ -24,7 +24,7 @@ header {
     position: relative;
 }
 
-header .descriptionHeader{
+header .descriptionHeader {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,10 +37,11 @@ header .descriptionHeader a {
     text-decoration: none;
 }
 
-header .descriptionHeader button{
+header .descriptionHeader button {
     width: 200px;
     height: 60px;
     background: crimson;
+    border: 2px solid crimson;
     color: #f1f1f1;
     border: none;
     border-radius: 10px;
@@ -51,6 +52,10 @@ header .descriptionHeader button{
     position: relative;
     font-family: "Montserrat", "Helvetica Neue";
     font-size: 25px;
+}
+
+header .descriptionHeader button:hover {
+    top: 5px;
 }
 
 header .introduction_max {
@@ -77,19 +82,14 @@ header #app {
     font-family: "Montserrat", "Helvetica Neue";
 }
 
-header  a .linkedinButton{
+header a .linkedinButton {
     font-size: 25px;
-   
 }
-
-
-
-
 
 header nav {
     position: fixed;
     z-index: 1;
-    font-family: "Montserrat","Helvetica Neue";
+    font-family: "Montserrat", "Helvetica Neue";
 }
 
 nav ul {
@@ -117,7 +117,7 @@ nav ul li {
     line-height: 60px;
 }
 
-nav ul li:nth-child(3){
+nav ul li:nth-child(3) {
     margin-left: 15px;
 }
 
@@ -152,7 +152,9 @@ nav ul li:hover {
     width: 200px;
     height: 60px;
     background: crimson;
-    color: #f1f1f1;
+    color: #fff;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -160,12 +162,12 @@ nav ul li:hover {
     font-size: 25px;
     cursor: pointer;
     white-space: nowrap;
-    position: relative;
     font-family: "Montserrat", "Helvetica Neue";
 }
 
 .presentationHeader button:hover {
-    top: 5px;
+    color: crimson;
+    background: none;
 }
 .presentationHeader {
     font-size: 20px;
@@ -191,7 +193,7 @@ header img {
 
 /* Présentation Part */
 
-.presentationPart{
+.presentationPart {
     text-align: center;
     font-size: 50px;
     font-family: "Montserrat", "Helvetica Neue";
@@ -199,9 +201,9 @@ header img {
 }
 
 .flexPresentation {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 70px;
 }
 
@@ -213,12 +215,11 @@ header img {
     margin-left: 80px;
 }
 
- #presentation button{
+#presentation button {
     width: 200px;
     height: 60px;
     background: crimson;
-    color: #f1f1f1;
-    border: none;
+    color: #fff;
     font-size: 20px;
     font-family: "Montserrat", "Helvetica Neue";
     border-radius: 10px;
@@ -226,22 +227,23 @@ header img {
     margin-top: 20px;
     cursor: pointer;
     white-space: nowrap;
-    position: relative;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
     display: block;
     margin: auto;
     margin-top: 40px;
 }
 
- button:hover {
-    top: 5px;
+#presentation button:hover {
+    color: crimson;
+    background: none;
 }
 
-
 .flexPresentation #presentation {
-  max-width:500px;
-  margin-left: 80px;
-  color: #f1f1f1;
-  font-family: "Montserrat", "Helvetica Neue";
+    max-width: 500px;
+    margin-left: 80px;
+    color: #f1f1f1;
+    font-family: "Montserrat", "Helvetica Neue";
 }
 
 .flexPresentation #presentation h2 {
@@ -292,104 +294,87 @@ footer p {
     color: #fff;
 }
 
-
-@media screen and (max-width:428px){
-
-    .flex_item_nav ul li{
+@media screen and (max-width: 428px) {
+    .flex_item_nav ul li {
         display: block;
-      margin-left: auto;
-      margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .introduction_max{
+    .introduction_max {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .descriptionHeader .introduction_max{
+    .descriptionHeader .introduction_max {
         font-size: 18px;
     }
 
-    header #app{
+    header #app {
         margin-top: 15px;
         font-size: 30px;
     }
 
-    header  a .linkedinButton{
+    header a .linkedinButton {
         font-size: 20px;
-       
     }
 
-
-    .flexPresentation{
+    .flexPresentation {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
 
-    .flexPresentation img{
+    .flexPresentation img {
         width: 40%;
         margin: auto;
     }
 
-    .flexPresentation #presentation{
+    .flexPresentation #presentation {
         display: block;
         margin: auto;
     }
-
-
 }
 
-
-
-@media screen and (max-width: 414px){
-
-    .flex_item_nav ul li{
+@media screen and (max-width: 414px) {
+    .flex_item_nav ul li {
         display: block;
-      margin-left: auto;
-      margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .introduction_max{
+    .introduction_max {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .descriptionHeader .introduction_max{
+    .descriptionHeader .introduction_max {
         font-size: 16px;
     }
 
-    header #app{
+    header #app {
         font-size: 30px;
     }
 
-    header  a .linkedinButton{
+    header a .linkedinButton {
         font-size: 20px;
-       
     }
 
-
-    .flexPresentation{
+    .flexPresentation {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
 
-    .flexPresentation img{
+    .flexPresentation img {
         width: 40%;
         margin: auto;
     }
 
-    .flexPresentation #presentation{
+    .flexPresentation #presentation {
         display: block;
         margin: auto;
     }
-
 }
-
-
-
-
-

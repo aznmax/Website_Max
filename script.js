@@ -6,13 +6,13 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString("JAVASCRIPT",)
-    .pauseFor(1000)
-    .deleteAll(200)
-    .typeString("HTML")
+typewriter.typeString("HTML",)
     .pauseFor(1000)
     .deleteAll(200)
     .typeString("CSS")
+    .pauseFor(1000)
+    .deleteAll(200)
+    .typeString("JAVASCRIPT")
     .pauseFor(1000)
     .deleteAll(200)
     .typeString("React")

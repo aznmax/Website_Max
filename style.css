@@ -331,6 +331,10 @@ footer p {
         margin: auto;
     }
 
+    .parralax p {
+        text-align: center;
+    }
+
     .flexPresentation #presentation {
         display: block;
         margin: auto;

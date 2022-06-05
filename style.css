@@ -1,0 +1,305 @@
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    height: 100vh;
+    position: relative;
+}
+
+/* Header  */
+
+.flex_item_nav {
+    background: url("./headerMax.jpg");
+    max-width: 2000px;
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+header {
+    position: relative;
+}
+
+header .descriptionHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .descriptionHeader a {
+    text-decoration: none;
+}
+
+header .descriptionHeader button{
+    width: 200px;
+    height: 60px;
+    background: crimson;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 35px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Montserrat", "Helvetica Neue";
+    font-size: 25px;
+}
+
+header .introduction_max {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-family: "Montserrat", "Helvetica Neue";
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+/* TypeWriter Part  */
+
+header .flex_position {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+header #app {
+    font-size: 60px;
+    color: crimson;
+    font-weight: bolder;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+
+
+
+
+
+header nav {
+    position: fixed;
+    z-index: 1;
+    font-family: "Montserrat","Helvetica Neue";
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    display: inline-block;
+    list-style: none;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 20px;
+    color: #f1f1f1;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+nav ul li:nth-child(3){
+    margin-left: 15px;
+}
+
+nav ul li:hover {
+    display: block;
+    border-radius: 10px;
+    background: crimson;
+    color: #f1f1f1;
+    width: 60%;
+    display: block;
+}
+
+.presentationHeader {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #f1f1f1;
+    margin-bottom: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#presentation a {
+    text-decoration: none;
+}
+
+.presentationHeader button {
+    width: 200px;
+    height: 60px;
+    background: crimson;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+
+.presentationHeader button:hover {
+    top: 5px;
+}
+.presentationHeader {
+    font-size: 20px;
+}
+
+.presentationHeader .text_1 {
+    font-size: 30px;
+}
+
+.presentationHeader .text_2 {
+    font-size: 50px;
+}
+
+.presentationHeader .text_3 {
+    font-size: 50px;
+}
+
+header img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Présentation Part */
+
+.presentationPart{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Montserrat", "Helvetica Neue";
+    color: #f1f1f1;
+}
+
+.flexPresentation {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-top: 70px;
+}
+
+.flexPresentation img {
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 80px;
+}
+
+ #presentation button{
+    width: 200px;
+    height: 60px;
+    background: crimson;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+ button:hover {
+    top: 5px;
+}
+
+
+.flexPresentation #presentation {
+  max-width:500px;
+  margin-left: 80px;
+  color: #f1f1f1;
+  font-family: "Montserrat", "Helvetica Neue";
+}
+
+.flexPresentation #presentation h2 {
+    text-align: center;
+}
+
+.flexPresentation #presentation p {
+    text-align: center;
+}
+
+.flexPresentation #presentation p::selection {
+    background: crimson;
+}
+
+/* Parralax Part */
+
+.parralax {
+    background: url("./parallax-effect-t.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 300px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parralax p {
+    color: #fff;
+    font-size: 60px;
+}
+
+/* Footer Part */
+
+footer {
+    margin-top: 250px;
+    width: 100%;
+    padding: 15px 0px;
+    background: crimson;
+}
+
+footer p {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 390px){
+
+  
+    header .flex_item_nav{
+        width: 100%;
+    }
+
+
+header .descriptionHeader{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+}

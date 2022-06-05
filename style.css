@@ -59,6 +59,7 @@ header .introduction_max {
     font-family: "Montserrat", "Helvetica Neue";
     margin-top: 20px;
     white-space: nowrap;
+    margin: 0;
 }
 
 /* TypeWriter Part  */

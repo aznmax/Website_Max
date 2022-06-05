@@ -76,6 +76,11 @@ header #app {
     font-family: "Montserrat", "Helvetica Neue";
 }
 
+header  a .linkedinButton{
+    font-size: 25px;
+   
+}
+
 
 
 
@@ -151,6 +156,7 @@ nav ul li:hover {
     border-radius: 10px;
     padding: 5px 10px;
     margin-top: 20px;
+    font-size: 25px;
     cursor: pointer;
     white-space: nowrap;
     position: relative;
@@ -212,6 +218,8 @@ header img {
     background: crimson;
     color: #f1f1f1;
     border: none;
+    font-size: 20px;
+    font-family: "Montserrat", "Helvetica Neue";
     border-radius: 10px;
     padding: 5px 10px;
     margin-top: 20px;

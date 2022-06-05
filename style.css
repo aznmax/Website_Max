@@ -308,10 +308,11 @@ footer p {
     }
 
     .descriptionHeader .introduction_max{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     header #app{
+        margin-top: 15px;
         font-size: 30px;
     }
 

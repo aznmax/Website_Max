@@ -4,7 +4,7 @@ body {
     padding: 0;
     background: #333;
     height: 100vh;
-    position: relative;
+    
 }
 
 /* Header  */
@@ -20,9 +20,7 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-header {
-    position: relative;
-}
+
 
 header .descriptionHeader {
     display: flex;
@@ -86,27 +84,32 @@ header a .linkedinButton {
     font-size: 25px;
 }
 
+
 header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    display: block;
+    width: 100%;
+    height: 80px;
     position: absolute;
-    right: 0px
     font-family: "Montserrat", "Helvetica Neue";
 }
 
-nav ul {
+.flex_item_nav nav{
     display: flex;
-    margin: 0;
-    margin-right: 50px;
-    margin-top: 20px;
 }
+
+
+
 
 nav ul a {
     text-decoration: none;
 }
 
-nav ul li {
-    padding: 0;
-    margin: 0;
-    margin-right: 15px;
+header nav ul li {
+    
     display: inline-block;
     list-style: none;
     white-space: nowrap;
@@ -115,20 +118,12 @@ nav ul li {
     color: #f1f1f1;
     cursor: pointer;
     line-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav ul li:nth-child(3) {
-    margin-left: 15px;
-}
 
-nav ul li:hover {
-    display: block;
-    border-radius: 10px;
-    background: crimson;
-    color: #f1f1f1;
-    width: 60%;
-    display: block;
-}
+
 
 .presentationHeader {
     display: flex;
@@ -309,15 +304,24 @@ footer p {
         background-position: right;
         background-size: cover;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row;
+        justify-content: center;
+      
     }
 
-   
-    .flex_item_nav ul li {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+    .flex_item_nav nav ul {
+        margin: 0;
+        padding: 0;
     }
+   
+  .flex_item_nav nav ul li{
+      display: inline-block;
+      margin-left: auto;
+      margin-top: auto;
+   
+  }        
+  
 
     .introduction_max {
         display: flex;

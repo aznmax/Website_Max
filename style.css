@@ -87,8 +87,8 @@ header a .linkedinButton {
 }
 
 header nav {
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    right: 0px
     font-family: "Montserrat", "Helvetica Neue";
 }
 
@@ -296,6 +296,10 @@ footer p {
 
 @media screen and (max-width: 428px) {
 
+    header nav {
+        font-family: "Montserrat", "Helvetica Neue";
+    }
+
 
     .flex_item_nav {
         background: url("./headerMax.jpg");
@@ -308,6 +312,7 @@ footer p {
         justify-content: flex-end;
     }
 
+   
     .flex_item_nav ul li {
         display: block;
         margin-left: auto;

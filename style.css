@@ -264,17 +264,7 @@ footer p {
         font-family: "Montserrat", "Helvetica Neue";
     }
 
-    .flex_item_nav {
-        background: url("./headerMax.jpg");
-        width: 100%;
-        height: 900px;
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: cover;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  
 
     .flex_item_nav nav ul {
         margin: 0;
@@ -295,11 +285,12 @@ footer p {
 
     .descriptionHeader .introduction_max {
         font-size: 18px;
+        text-align: center;
     }
 
-    header #typeWritter {
+    #Description #type {
         margin-top: 15px;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     header a .linkedinButton {
@@ -309,6 +300,17 @@ footer p {
     .flexPresentation {
         display: flex;
         flex-direction: column;
+        margin: auto;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name img{
+        width: 100%;
+        display: block;
         margin: auto;
     }
 

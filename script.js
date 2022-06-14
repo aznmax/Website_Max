@@ -1,12 +1,11 @@
+let typeWrite = document.getElementById("type");
 
-
-var app = document.getElementById('app');
-
-var typewriter = new Typewriter(app, {
-    loop: true
+var typewriter = new Typewriter(type, {
+    loop: true,
 });
 
-typewriter.typeString("HTML",)
+typewriter
+    .typeString("HTML")
     .pauseFor(1000)
     .deleteAll(200)
     .typeString("CSS")
@@ -19,3 +18,4 @@ typewriter.typeString("HTML",)
     .pauseFor(1000)
     .deleteAll(200)
     .start();
+

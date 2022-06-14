@@ -4,23 +4,13 @@ body {
     padding: 0;
     background: #333;
     height: 100vh;
-    
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Header  */
-
-.flex_item_nav {
-    background: url("./headerMax.jpg");
-    max-width: 2000px;
-    width: 100%;
-    height: 900px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-}
-
 
 header .descriptionHeader {
     display: flex;
@@ -73,17 +63,12 @@ header .flex_position {
     margin-right: auto;
     margin-left: auto;
 }
-header #app {
+header #typeWritter {
     font-size: 60px;
     color: crimson;
     font-weight: bolder;
     font-family: "Montserrat", "Helvetica Neue";
 }
-
-header a .linkedinButton {
-    font-size: 25px;
-}
-
 
 header nav {
     display: flex;
@@ -97,19 +82,15 @@ header nav {
     font-family: "Montserrat", "Helvetica Neue";
 }
 
-.flex_item_nav nav{
+.flex_item_nav nav {
     display: flex;
 }
-
-
-
 
 nav ul a {
     text-decoration: none;
 }
 
 header nav ul li {
-    
     display: inline-block;
     list-style: none;
     white-space: nowrap;
@@ -122,135 +103,113 @@ header nav ul li {
     margin-right: auto;
 }
 
+/* Introduction Description */
 
-
-
-.presentationHeader {
+#Description {
+    background: url("./headerMax.jpg");
+    max-width: 2000px;
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    color: #f1f1f1;
-    margin-bottom: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    align-items: center;
+    color: crimson;
+    font-size: 40px;
 }
 
-#presentation a {
+#Description .introduction_max {
+    margin: 0;
+}
+
+
+
+#Description #type {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+#Description a {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: #f1f1f1;
+    background: crimson;
+    font-size: 30px;
     text-decoration: none;
 }
 
-.presentationHeader button {
-    width: 200px;
-    height: 60px;
-    background: crimson;
-    color: #fff;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-top: 20px;
-    font-size: 25px;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family: "Montserrat", "Helvetica Neue";
+#Description a:hover{
+    outline: 6px solid crimson;
 }
 
-.presentationHeader button:hover {
-    color: crimson;
-    background: none;
-}
-.presentationHeader {
-    font-size: 20px;
-}
+/* Presentation  */
 
-.presentationHeader .text_1 {
-    font-size: 30px;
-}
-
-.presentationHeader .text_2 {
-    font-size: 50px;
-}
-
-.presentationHeader .text_3 {
-    font-size: 50px;
-}
-
-header img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-}
-
-/* Présentation Part */
-
-.presentationPart {
-    text-align: center;
-    font-size: 50px;
-    font-family: "Montserrat", "Helvetica Neue";
+h2{
     color: #f1f1f1;
+    font-family: "Montserrat", "Helvetica Ne";
 }
 
-.flexPresentation {
+.description_max .CV_button{
+    display: block;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    font-family: "Montserrat", "Helvetica Ne";
+}
+
+.titrePresentation {
+    text-align: center;
+    font-size: 40px;
+}
+
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+}
+.name .flexPresentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.flexPresentation img {
-    margin-top: 30px;
-    width: 30%;
-    object-fit: cover;
+.name .description_max {
+    max-width: 500px;
+}
+
+.name img {
+    width: 20%;
     border-radius: 15px;
-    margin-left: 80px;
 }
 
-#presentation button {
-    width: 200px;
-    height: 60px;
+.name p {
+    margin-left: 30px;
+    color: #f1f1f1;
+}
+
+.name a {
+    margin-left: 30px;
+    padding: 15px 25px;
+    color: #f1f1f1;
     background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-family: "Montserrat", "Helvetica Neue";
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    white-space: nowrap;
+    text-decoration: none;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
-    display: block;
-    margin: auto;
-    margin-top: 40px;
+    transition: all 0.5s ease;
 }
 
-#presentation button:hover {
-    color: crimson;
+.name a:hover {
     background: none;
 }
 
-.flexPresentation #presentation {
-    max-width: 500px;
-    margin-left: 80px;
-    color: #f1f1f1;
-    font-family: "Montserrat", "Helvetica Neue";
-}
-
-.flexPresentation #presentation h2 {
-    text-align: center;
-}
-
-.flexPresentation #presentation p {
-    text-align: center;
-}
-
-.flexPresentation #presentation p::selection {
-    background: crimson;
+.Presentation {
+    display: flex;
 }
 
 /* Parralax Part */
@@ -274,6 +233,17 @@ header img {
     font-size: 60px;
 }
 
+/* Button */
+
+button {
+    width: 20%;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
 /* Footer Part */
 
 footer {
@@ -290,11 +260,9 @@ footer p {
 }
 
 @media screen and (max-width: 428px) {
-
     header nav {
         font-family: "Montserrat", "Helvetica Neue";
     }
-
 
     .flex_item_nav {
         background: url("./headerMax.jpg");
@@ -306,22 +274,18 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: center;
-      
     }
-
 
     .flex_item_nav nav ul {
         margin: 0;
         padding: 0;
     }
-   
-  .flex_item_nav nav ul li{
-      display: inline-block;
-      margin-left: auto;
-      margin-top: auto;
-   
-  }        
-  
+
+    .flex_item_nav nav ul li {
+        display: inline-block;
+        margin-left: auto;
+        margin-top: auto;
+    }
 
     .introduction_max {
         display: flex;
@@ -333,7 +297,7 @@ footer p {
         font-size: 18px;
     }
 
-    header #app {
+    header #typeWritter {
         margin-top: 15px;
         font-size: 30px;
     }
@@ -380,7 +344,7 @@ footer p {
         font-size: 16px;
     }
 
-    header #app {
+    header #typeWritter {
         font-size: 30px;
     }
 

@@ -106,7 +106,7 @@ header nav ul li {
 /* Introduction Description */
 
 #Description {
-    background: url("./headerMax.jpg");
+    background: url("./medias/headerMax.jpg");
     max-width: 2000px;
     width: 100%;
     height: 900px;
@@ -215,7 +215,7 @@ h2{
 /* Parralax Part */
 
 .parralax {
-    background: url("./parallax-effect-t.jpg");
+    background: url("./medias/parallax-effect-t.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,6 +243,19 @@ button {
     margin-top: 70px;
     cursor: pointer;
 }
+
+
+/* Arrow Up  */
+
+.arrowUp img {
+    position: fixed;
+    right: 15px;
+    bottom: 0px;
+    width: 3%;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
 
 /* Footer Part */
 
@@ -281,6 +294,7 @@ footer p {
         display: flex;
         flex-direction: column;
         width: 100%;
+        font-size: 35px;
     }
 
     .descriptionHeader .introduction_max {
@@ -291,6 +305,10 @@ footer p {
     #Description #type {
         margin-top: 15px;
         font-size: 35px;
+    }
+
+    #Description  a {
+        font-size: 20px;
     }
 
     header a .linkedinButton {
@@ -319,13 +337,31 @@ footer p {
         margin: auto;
     }
 
+    #Parralax{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .parralax p {
         text-align: center;
     }
 
-    .flexPresentation #presentation {
+    .flexPresentation #Presentation {
         display: block;
         margin: auto;
+    }
+
+    #Parralax p {
+        font-size: 25px;
+    }
+
+    .arrowUp img {
+        position: fixed;
+        right: 15px;
+        bottom: 0px;
+        width: 10%;
+        color: #f1f1f1;
+        cursor: pointer;
     }
 }
 

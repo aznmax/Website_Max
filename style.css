@@ -6,7 +6,7 @@ body {
     height: 100vh;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -125,8 +125,6 @@ header nav ul li {
     margin: 0;
 }
 
-
-
 #Description #type {
     margin-top: 30px;
     font-size: 50px;
@@ -144,18 +142,18 @@ header nav ul li {
     text-decoration: none;
 }
 
-#Description a:hover{
+#Description a:hover {
     outline: 6px solid crimson;
 }
 
 /* Presentation  */
 
-h2{
+h2 {
     color: #f1f1f1;
     font-family: "Montserrat", "Helvetica Ne";
 }
 
-.description_max .CV_button{
+.description_max .CV_button {
     display: block;
     width: 30%;
     margin: auto;
@@ -187,10 +185,10 @@ h2{
 .name img {
     width: 20%;
     border-radius: 15px;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
-.name img:hover{
+.name img:hover {
     transform: scale(1.1);
 }
 
@@ -215,6 +213,116 @@ h2{
 
 .Presentation {
     display: flex;
+}
+
+/* Skills */
+
+.section_skills {
+    height: 480px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_skills .skills_container {
+    margin-top: 200px;
+    width: 100%;
+    background-color: black;
+    height: 600px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_skills .skills_container .containter_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    background: grey;
+    border-radius: 15px;
+
+}
+
+
+.section_skills .skills_container .container_skills{
+    width: 25%;
+    height: 70%;
+    border-radius: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #333;
+    transition: 0.3s all ease-in;
+}
+
+.section_skills .skills_container .container_skills:hover{
+    background-color: crimson;
+}
+
+.section_skills .skills_container .container_skills img{
+  margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    transition: all .3s ease-in;
+}
+
+
+
+.section_skills .skills_container .container_skills p{
+    margin: 0;
+}
+
+
+
+
+.section_skills .skills_container .containter_int p {
+    display: block;
+    margin: 0;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.section_skills .skills_container .containter_int .text_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section_skills .skills_container .containter_int:hover {
+    background: crimson;
+}
+
+.section_skills .skills_container img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: auto;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section_skills .skills_container img:hover {
+    outline: 6px solid black;
+}
+
+
+.section_skills .skills_container p {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
 
 /* Parralax Part */
@@ -249,7 +357,6 @@ button {
     cursor: pointer;
 }
 
-
 /* Arrow Up  */
 
 .arrowUp img {
@@ -260,7 +367,6 @@ button {
     color: #f1f1f1;
     cursor: pointer;
 }
-
 
 /* Footer Part */
 
@@ -282,10 +388,9 @@ footer p {
         font-family: "Montserrat", "Helvetica Neue";
     }
 
-  
-#Description{
-    background-position: right;
-}
+    #Description {
+        background-position: right;
+    }
     .flex_item_nav nav ul {
         margin: 0;
         padding: 0;
@@ -314,7 +419,7 @@ footer p {
         font-size: 35px;
     }
 
-    #Description  a {
+    #Description a {
         font-size: 20px;
     }
 
@@ -328,12 +433,12 @@ footer p {
         margin: auto;
     }
 
-    .name{
+    .name {
         display: flex;
         flex-direction: column;
     }
 
-    .name img{
+    .name img {
         width: 100%;
         display: block;
         margin: auto;
@@ -344,7 +449,20 @@ footer p {
         margin: auto;
     }
 
-    #Parralax{
+    .section_skills .skills_container {
+        width: 100%;
+    }
+
+    .section_skills .skills_container p {
+        display: block;
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+
+    #Parralax {
         display: flex;
         justify-content: center;
         align-items: center;

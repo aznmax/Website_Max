@@ -569,11 +569,13 @@ footer p {
         width: 10%;
         color: #f1f1f1;
         cursor: pointer;
+        z-index: 90;
     }
 
-    footer {
-        margin-bottom: 0px;
-    }
+   footer{
+    position: relative;
+    top: 60px;
+   }
 }
 
 @media screen and (max-width: 414px) {

@@ -90,6 +90,11 @@ nav ul a {
     text-decoration: none;
 }
 
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
 header nav ul li {
     display: inline-block;
     list-style: none;
@@ -140,7 +145,7 @@ header nav ul li {
     background: crimson;
     font-size: 30px;
     text-decoration: none;
-    transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #Description a:hover {
@@ -155,8 +160,9 @@ h2 {
 }
 
 .description_max .CV_button {
+    padding: 20px 15px;
     display: block;
-    width: 30%;
+    width: 20%;
     margin: auto;
     text-align: center;
     border-radius: 15px;
@@ -168,28 +174,6 @@ h2 {
     font-size: 40px;
 }
 
-.name {
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   
-}
-
-
-.name .description_max {
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-left: 60px;
-
-}
-
-.name .description_max p{
-    max-width: 500px;
-}
-
 .name img {
     width: 100%;
     border-radius: 15px;
@@ -197,21 +181,21 @@ h2 {
     transition: all 0.3s ease-in;
 }
 
-.name .inside{
-    width: 20%;
+.name .inside {
+    width: 50%;
     display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-
 
 .name img:hover {
     transform: scale(1.1);
 }
 
 .name p {
-    
+    margin-left: 70px;
     color: #f1f1f1;
 }
 
@@ -251,10 +235,9 @@ h2 {
     transition: all 0.3s;
     border-radius: 10px;
     position: relative;
-    
 }
 
-.section_skills .skills_container .title_skills{
+.section_skills .skills_container .title_skills {
     text-align: center;
     font-family: "Roboto", "Helvetica Neue";
     position: absolute;
@@ -262,8 +245,6 @@ h2 {
     left: 47%;
     color: crimson;
 }
-
-
 
 .section_skills .skills_container .containter_int {
     display: flex;
@@ -276,17 +257,20 @@ h2 {
     height: 100%;
     background: grey;
     border-radius: 15px;
-
 }
 
-.section_skills .skills_container .container_all{
+.btn_toggle_container .burger_menu {
+    display: none;
+}
+
+.section_skills .skills_container .container_all {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 150px;
 }
 
-.section_skills .skills_container .container_skills{
+.section_skills .skills_container .container_skills {
     width: 25%;
     height: 70%;
     border-radius: 20px;
@@ -299,30 +283,26 @@ h2 {
     transition: 0.3s all ease-in;
 }
 
-.section_skills .skills_container .container_skills{
+.section_skills .skills_container .container_skills {
     display: flex;
 }
 
-
-.section_skills .skills_container .container_skills:hover{
+.section_skills .skills_container .container_skills:hover {
     background-color: crimson;
 }
 
-.section_skills .skills_container .container_skills img{
-  margin-top: 50px;
+.section_skills .skills_container .container_skills img {
+    margin-top: 50px;
     width: 100px;
     height: 100px;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
-
-
-.section_skills .skills_container .container_skills p{
+.section_skills .skills_container .container_skills p {
+    padding: 18px;
     margin: 0;
+    font-size: 16px;
 }
-
-
-
 
 .section_skills .skills_container .containter_int p {
     display: block;
@@ -355,7 +335,6 @@ h2 {
     outline: 6px solid black;
 }
 
-
 .section_skills .skills_container p {
     font-size: 25px;
     color: #fff;
@@ -385,6 +364,10 @@ h2 {
     font-size: 60px;
 }
 
+.flex_item_nav .burger_menu {
+    display: none;
+}
+
 /* Button */
 
 button {
@@ -398,12 +381,12 @@ button {
 
 /* Arrow Up  */
 
-.arrowUp img {
+a img {
     position: fixed;
     right: 15px;
-    bottom: 0px;
+    bottom: 10px;
     width: 3%;
-    color: #f1f1f1;
+    filter: brightness(0) invert(1);
     cursor: pointer;
 }
 
@@ -427,21 +410,41 @@ footer p {
         font-family: "Montserrat", "Helvetica Neue";
     }
 
+    header nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .flex_item_nav nav {
+        display: block;
+    }
     #Description {
         background-position: right;
     }
-    .flex_item_nav nav ul {
-        margin: 0;
-        padding: 0;
-    }
 
-    .flex_item_nav nav ul li {
-        display: inline-block;
+    .btn_toggle_container .burger_menu {
+        width: 15%;
         margin-left: auto;
-        margin-top: auto;
+        display: block;
     }
 
+ 
+
+.liste_nav {
+    display: none;
+    
+}
+    .liste_nav .burger_menu{
+        display: block;
+    }
+    .item-nav {
+        display:block;
+        background: crimson;
+        margin: 0;
+    }
     .introduction_max {
+        width: 100%;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -472,7 +475,8 @@ footer p {
         margin: auto;
     }
 
-    .name {
+    .name .inside {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -483,9 +487,48 @@ footer p {
         margin: auto;
     }
 
+    .name p {
+        margin-left: 0px;
+        max-width: 300px;
+    }
+    .name .description_max {
+        max-width: 400px;
+    }
+
+    .name .description_max a {
+        width: 60%;
+    }
+
     .flexPresentation img {
         width: 100%;
         margin: auto;
+    }
+
+    .section_skills .skills_container {
+        height: 1150px;
+        margin-top: 350px;
+    }
+
+    .section_skills .skills_container .title_skills {
+        text-align: center;
+        font-family: "Roboto", "Helvetica Neue";
+        position: absolute;
+        font-size: 45px;
+        left: 40%;
+        color: crimson;
+    }
+    .section_skills .skills_container .container_all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .section_skills .skills_container .container_all .container_skills {
+        width: 100%;
+        margin: 0;
+        margin-top: 25px;
     }
 
     .section_skills .skills_container {
@@ -502,9 +545,7 @@ footer p {
     }
 
     #Parralax {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 80px;
     }
     .parralax p {
         text-align: center;
@@ -517,15 +558,21 @@ footer p {
 
     #Parralax p {
         font-size: 25px;
+        top: 0%;
+        left: 40%;
     }
 
-    .arrowUp img {
+    a img {
         position: fixed;
         right: 15px;
-        bottom: 0px;
+        bottom: 25px;
         width: 10%;
         color: #f1f1f1;
         cursor: pointer;
+    }
+
+    footer {
+        margin-bottom: 0px;
     }
 }
 

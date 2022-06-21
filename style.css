@@ -1,9 +1,19 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
 /* Body */
 body {
     margin: 0;
     padding: 0;
     background: #333;
-    height: 100vh;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 html {
@@ -78,7 +88,6 @@ header nav {
     display: block;
     width: 100%;
     height: 80px;
-    position: absolute;
     font-family: "Montserrat", "Helvetica Neue";
 }
 
@@ -154,7 +163,7 @@ header nav ul li {
 
 /* Presentation  */
 
-h2 {
+.name .titrePresentation {
     color: #f1f1f1;
     font-family: "Montserrat", "Helvetica Ne";
 }
@@ -166,6 +175,7 @@ h2 {
     margin: auto;
     text-align: center;
     border-radius: 15px;
+    margin-top: 25px;
     font-family: "Montserrat", "Helvetica Ne";
 }
 
@@ -174,15 +184,19 @@ h2 {
     font-size: 40px;
 }
 
+.name{
+    margin-top: 50px;
+}
+
 .name img {
-    width: 100%;
+    width: 60%;
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease-in;
 }
 
 .name .inside {
-    width: 50%;
+    width: 70%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -192,11 +206,13 @@ h2 {
 
 .name img:hover {
     transform: scale(1.1);
+    border-radius: 15px;
 }
 
 .name p {
     margin-left: 70px;
     color: #f1f1f1;
+    font-family: "Roboto", "Helvetica Neue";
 }
 
 .name a {
@@ -220,18 +236,19 @@ h2 {
 /* Skills */
 
 .section_skills {
-    height: 480px;
-    margin-top: 200px;
+   height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 90px;
 }
 
 .section_skills .skills_container {
-    margin-top: 200px;
+    margin-top: 0px;
     width: 100%;
     background-color: black;
     height: 600px;
+    margin: auto;
     transition: all 0.3s;
     border-radius: 10px;
     position: relative;
@@ -243,6 +260,7 @@ h2 {
     position: absolute;
     font-size: 50px;
     left: 47%;
+    top: 10%;
     color: crimson;
 }
 
@@ -271,8 +289,9 @@ h2 {
 }
 
 .section_skills .skills_container .container_skills {
-    width: 25%;
-    height: 70%;
+    width: 23%;
+    height: 100%;
+    padding: 25px;
     border-radius: 20px;
     margin-left: 30px;
     display: flex;
@@ -289,6 +308,10 @@ h2 {
 
 .section_skills .skills_container .container_skills:hover {
     background-color: crimson;
+}
+
+.section_skills .skills_container .container_skills h2 {
+    color: #f1f1f1;
 }
 
 .section_skills .skills_container .container_skills img {
@@ -343,29 +366,14 @@ h2 {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
 
-/* Parralax Part */
-
-.parralax {
-    background: url("./medias/parallax-effect-t.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 300px;
-    background-attachment: fixed;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parralax p {
-    color: #fff;
-    font-size: 60px;
-}
-
 .flex_item_nav .burger_menu {
     display: none;
+}
+
+.item_nav{
+    display: block;
+    position: relative;
+    background: crimson;
 }
 
 /* Button */
@@ -382,6 +390,7 @@ button {
 /* Arrow Up  */
 
 a img {
+    z-index: 90;
     position: fixed;
     right: 15px;
     bottom: 10px;
@@ -393,23 +402,27 @@ a img {
 /* Footer Part */
 
 footer {
-    margin-top: 250px;
-    width: 100%;
-    padding: 15px 0px;
-    background: crimson;
+ width: 100%;
+ background: crimson;
+ margin-top: 30px;
+ padding: 20px 0;
 }
 
 footer p {
     text-align: center;
-    font-size: 22px;
-    color: #fff;
+    color: #f1f1f1;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 428px) {
+    html{
+        height: 100%;
+    }
     header nav {
         font-family: "Montserrat", "Helvetica Neue";
     }
 
+  
     header nav ul {
         width: 100%;
         margin: 0;
@@ -429,20 +442,22 @@ footer p {
         display: block;
     }
 
- 
-
-.liste_nav {
-    display: none;
-    
-}
-    .liste_nav .burger_menu{
+    .liste_nav {
+        display: none;
+    }
+    .liste_nav .burger_menu {
         display: block;
     }
-    .item-nav {
-        display:block;
+
+    .item-nav{
+        display: block;
+        width: 100%;
+        position: relative;
         background: crimson;
-        margin: 0;
     }
+
+    
+
     .introduction_max {
         width: 100%;
         display: flex;
@@ -476,9 +491,9 @@ footer p {
     }
 
     .name .inside {
-        width: 100%;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .name img {
@@ -504,19 +519,21 @@ footer p {
         margin: auto;
     }
 
-    .section_skills .skills_container {
-        height: 1150px;
-        margin-top: 350px;
-    }
-
     .section_skills .skills_container .title_skills {
         text-align: center;
         font-family: "Roboto", "Helvetica Neue";
         position: absolute;
         font-size: 45px;
-        left: 40%;
+        left:36%;
+        top: 2%;
         color: crimson;
     }
+    .section_skills .skills_container {
+        width: 100%;
+        height: auto;
+        background: black;
+    }
+
     .section_skills .skills_container .container_all {
         display: flex;
         flex-direction: column;
@@ -528,12 +545,11 @@ footer p {
     .section_skills .skills_container .container_all .container_skills {
         width: 100%;
         margin: 0;
-        margin-top: 25px;
+        margin-top: 35px;
+        padding: 0;
     }
 
-    .section_skills .skills_container {
-        width: 100%;
-    }
+   
 
     .section_skills .skills_container p {
         display: block;
@@ -571,11 +587,12 @@ footer p {
         cursor: pointer;
         z-index: 90;
     }
-
-   footer{
-    position: relative;
-    top: 60px;
-   }
+    footer {
+     
+        position: relative;
+        bottom: 0px;
+           
+    }
 }
 
 @media screen and (max-width: 414px) {

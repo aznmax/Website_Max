@@ -11,10 +11,7 @@ body {
     background: #333;
 }
 
-body,
-html {
-    height: 100%;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -418,6 +415,10 @@ footer p {
     html{
         height: 100%;
     }
+
+    body{
+        position: relative;
+    }
     header nav {
         font-family: "Montserrat", "Helvetica Neue";
     }
@@ -452,6 +453,8 @@ footer p {
     .item-nav{
         display: block;
         width: 100%;
+        margin: 0;
+        padding: 0;
         position: relative;
         background: crimson;
     }
@@ -500,10 +503,12 @@ footer p {
         width: 100%;
         display: block;
         margin: auto;
+        margin-top: 30px;
     }
 
     .name p {
         margin-left: 0px;
+        margin-top: 30px;
         max-width: 300px;
     }
     .name .description_max {
@@ -528,11 +533,7 @@ footer p {
         top: 2%;
         color: crimson;
     }
-    .section_skills .skills_container {
-        width: 100%;
-        height: auto;
-        background: black;
-    }
+ 
 
     .section_skills .skills_container .container_all {
         display: flex;
@@ -540,6 +541,13 @@ footer p {
         justify-content: center;
         width: 100%;
         margin-top: 80px;
+    }
+
+    .section_skills .skills_container{
+        margin: 0;
+        height: 100%;
+        background: black;
+       
     }
 
     .section_skills .skills_container .container_all .container_skills {
@@ -589,8 +597,8 @@ footer p {
     }
     footer {
      
-        position: relative;
-        bottom: 0px;
+        position: absolute;
+        margin-top: 40px;
            
     }
 }

@@ -429,14 +429,19 @@ footer p {
         margin: 0;
         padding: 0;
         display: block;
+        position: absolute;
+        top: 65px;
     }
     .flex_item_nav nav {
         display: block;
+        position: relative;
     }
     #Description {
         background-position: right;
     }
 
+
+   
     .btn_toggle_container .burger_menu {
         width: 15%;
         margin-left: auto;
@@ -445,6 +450,8 @@ footer p {
 
     .liste_nav {
         display: none;
+        position: absolute;
+        top: 60px;
     }
     .liste_nav .burger_menu {
         display: block;
@@ -455,7 +462,6 @@ footer p {
         width: 100%;
         margin: 0;
         padding: 0;
-        position: relative;
         background: crimson;
     }
 

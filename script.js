@@ -19,7 +19,7 @@ typewriter
     .deleteAll(200)
     .start();
 
-// Burger menu //
+// Burger menu Toggle //
 
 const burgerMenu = document.querySelector(".burger_menu");
 const openMenu = document.querySelector(".liste_nav");

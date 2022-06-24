@@ -309,6 +309,7 @@ header nav ul li {
 
 .section_skills .skills_container .container_skills h2 {
     color: #f1f1f1;
+    margin-top: 20px;
 }
 
 .section_skills .skills_container .container_skills img {
@@ -562,7 +563,6 @@ footer p {
         margin-top: 35px;
         padding: 0;
     }
-
    
 
     .section_skills .skills_container p {

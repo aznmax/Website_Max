@@ -32,3 +32,4 @@ burgerMenu.addEventListener("click", function(){
 openMenu.classList.toggle('liste_nav')
 
 })
+
